@@ -42,16 +42,15 @@ public:
 };
 
 
-
+/*
+Below is the priority_queue we design for the top-k heavy edges query
+*/
 class heap{
 public:
     edgeval **num;
     int s;
-    //将以k为根节点的子树设置成小根堆
-    //其中左右子树均已为小根堆
     void heapSubTree(int k,int n);
     heap(){}
-    //将小根堆初始化
     void initialHeap(int l);
     int find(string s1,string s2);
     ~heap();
@@ -187,7 +186,6 @@ private:
 	    uint64 memoryAllocated1,memoryAllocated2,memoryAllocated3;
 	    double insertNum;
 	    ul matrixSize;
-		int edge_num; // count the number of edges in the buffer to assist buffer size analysis. Self loop edge is not included as it does not use additional memory.
 		Auxo(int width, int range, int p_num, int f_num);
 		~Auxo()
 		{
@@ -239,7 +237,6 @@ private:
 	    uint64 memoryAllocated1,memoryAllocated2,memoryAllocated3;
 	    double insertNum;
 	    ul matrixSize;
-		int edge_num; // count the number of edges in the buffer to assist buffer size analysis. Self loop edge is not included as it does not use additional memory.
 		GSS_Chain(int width, int range, int p_num, int f_num);
 		~GSS_Chain()
 		{
