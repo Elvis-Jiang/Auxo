@@ -6,7 +6,7 @@ A graph stream refers to an unbounded, time involving edge stream, in which, eac
 
 ## About the source code and data sets
 
-We have implemented the basic idea GSS_Chain (GSS_Chain.h), Auxo (Auxo.h), and compacted Auxo (ComAuxo.h) in C++. We complete the code on Linux 5.4.0-99-generic and compile successfully using gcc 7.5.0. The hash function we use is in the file querysupportstruct.h.
+We have implemented the basic idea GSS_Chain (GSS_Chain.cpp), Auxo (Auxo.cpp), and compacted Auxo (ComAuxo.cpp) in C++. We complete the code on Linux 5.4.0-99-generic and compile successfully using gcc 7.5.0. The hash function we use is in the file querysupportstruct.h.
 
 All the data sets we use can be downloaded from the below website:  
 ```
