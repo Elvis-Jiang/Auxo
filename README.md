@@ -8,7 +8,7 @@ A graph stream refers to an unbounded, time involving edge stream, in which, eac
 
 We have implemented the basic idea GSS_Chain (GSS_Chain.cpp), Auxo (Auxo.cpp), and compacted Auxo (ComAuxo.cpp) in C++. We complete the code on Linux 5.4.0-99-generic and compile successfully using gcc 7.5.0. The hash function we use is in the file querysupportstruct.h.
 
-All the data sets we use can be downloaded from the below website:  
+All the data sets we use can be downloaded from the below website (In the "data" directory, we also upload a small test dataset sample "lkml" due to the size limitation of the project uploaded):  
 ```
     https://catalog.caida.org/details/dataset/passive_2015_pcap  
     https://networkrepository.com  
