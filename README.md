@@ -46,6 +46,6 @@ The data sets should be preprocessed to the format as below:
 Suppose you've already cloned the repository.  
 You just need:
 ```
-    $ cd sourceCode  
+    $ cd code  
     $ make  
     $ ./main  
