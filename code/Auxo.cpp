@@ -91,14 +91,12 @@ bool Auxo::insert(string s1, string s2,int weight,double& insertMatrix)// s1 is 
         gettimeofday( &t_start, NULL);
 		ul hash1 = mpq->MPQHash(s1.c_str(), Type);
 		ul hash2 = mpq->MPQHash(s2.c_str(), Type);
-		//È¡µÍfÎ»
 		unsigned int g1 = hash1 & fvalue[f];
 		if(g1==0) g1+=1;
 		unsigned int h1 = (hash1>>f)%w;
 		unsigned int g2 = hash2 & fvalue[f];
 		if(g2==0) g2+=1;
 		unsigned int h2 = (hash2>>f)%w;
-		//µ½Ê±ºò»¹Ô­µ½k
 		unsigned int k1 = (h1<<f)+g1;
 		unsigned int k2 = (h2<<f)+g2;
 
@@ -580,14 +578,14 @@ bool Auxo::reachQuery(string s1,string s2,double &queryTime){
 
     ul hash1 = mpq->MPQHash(s1.c_str(), Type);
     ul hash2 = mpq->MPQHash(s2.c_str(), Type);
-    //È¡µÍfÎ»
+    //å–ä½Žfä½
     ul g1 = hash1 & fvalue[f];
     if(g1==0) g1+=1;
     ul h1 = (hash1>>f)%w;
     ul g2 = hash2 & fvalue[f];
     if(g2==0) g2+=1;
     ul h2 = (hash2>>f)%w;
-    //µ½Ê±ºò»¹Ô­µ½k
+    //åˆ°æ—¶å€™è¿˜åŽŸåˆ°k
     ul k1 = (h1<<f)+g1;
     ul k2 = (h2<<f)+g2;
 
