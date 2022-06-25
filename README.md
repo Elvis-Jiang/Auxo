@@ -21,8 +21,8 @@ The data sets should be preprocessed to the format as below:
 * rawdata.txt -- The adjacency matrix of the network in whitespace-separated values format, with one edge per line  
     The meaning of the columns are:  
     ```
-        First column: ID of from node  
-        Second column: ID of to node  
+        First column: ID of source node  
+        Second column: ID of destination node  
         Third column: edge weight  
         Fourth column: timestamp of the edge  
      ```
@@ -30,8 +30,8 @@ The data sets should be preprocessed to the format as below:
 * edgeQueryTest.txt -- Test data for edge query
     The meaning of the columns are:
     ```
-        First column: ID of from node  
-        First column: ID of to node  
+        First column: ID of source node  
+        First column: ID of destination node  
         Third column: Accumulated weight of the edge  
     ```
 
@@ -39,7 +39,7 @@ The data sets should be preprocessed to the format as below:
 * nodeOutQueryTest.txt & nodeInQueryTest.txt -- Test data for node out (in)-flow query
     The meaning of the columns are:  
     ```
-        First column: ID of from (to) node  
+        First column: ID of source (destination) node  
         Second column: Accumulated weight of the node  
     ```
 
