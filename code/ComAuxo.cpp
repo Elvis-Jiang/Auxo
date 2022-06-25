@@ -218,14 +218,12 @@ int ComAuxo::insert(string s1, string s2,int weight,double& insertMatrix)// s1 i
         gettimeofday( &t_start, NULL);
 		ul hash1 = mpq->MPQHash(s1.c_str(), Type);
 		ul hash2 = mpq->MPQHash(s2.c_str(), Type);
-		//取低f位
 		ul g1 = hash1 & fvalue[f];
 		if(g1==0) g1+=1;
 		ul h1 = (hash1>>f)%w;
 		ul g2 = hash2 & fvalue[f];
 		if(g2==0) g2+=1;
 		ul h2 = (hash2>>f)%w;
-		//到时候还原到k
 		ul k1 = (h1<<f)+g1;
 		ul k2 = (h2<<f)+g2;
 
@@ -900,14 +898,12 @@ bool ComAuxo::reachQuery(string s1,string s2,double &queryTime){
 
     ul hash1 = mpq->MPQHash(s1.c_str(), Type);
     ul hash2 = mpq->MPQHash(s2.c_str(), Type);
-    //取低f位
     ul g1 = hash1 & fvalue[f];
     if(g1==0) g1+=1;
     ul h1 = (hash1>>f)%w;
     ul g2 = hash2 & fvalue[f];
     if(g2==0) g2+=1;
     ul h2 = (hash2>>f)%w;
-    //到时候还原到k
     ul k1 = (h1<<f)+g1;
     ul k2 = (h2<<f)+g2;
 
